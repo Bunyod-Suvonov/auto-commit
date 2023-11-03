@@ -1,5 +1,5 @@
 #!/bin/sh
-x = shuf -i 0-10 -n 1
+x = $(shuf -i 0-10 -n 1)
 project_dir="$HOME/auto-commit"
 
 if [ $x = 0 ]; then
