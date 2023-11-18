@@ -1,8 +1,13 @@
 #!/bin/sh
 x=$(shuf -i 0-10 -n 1)
+y=$(shuf -i 0-1 -n 1)
+z=$(shuf -i 0-1 -n 1)
 project_dir="$HOME/auto-commit"
 
 if [ $x = 0 ]; then
+	exit
+fi
+if [ $y = $z ]; then
 	exit
 fi
 
