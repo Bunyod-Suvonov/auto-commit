@@ -12,7 +12,7 @@ git clone https://github.com/Bunyod-Suvonov/auto-commit.git
 ```
 Optionally, change the script's parameters to your likes. Especially `project_dir` variable should be changed if the repo isn't cloned in `$HOME`
 ## Step 2
-Add the script to crontab and adjust anacron to run missed tasks:
+Add the script to cron's daily tasks
 ```bash
 # assuming apt is the package manager
 sudo apt install crontab anacron
