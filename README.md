@@ -3,14 +3,7 @@
 Using this tool, you can have an active github commit history in your profile.
 
 ## Step 1
-clone the repo:
-```bash
-# when using ssh
-git clone git@github.com:Bunyod-Suvonov/auto-commit.git
-# when using http
-git clone https://github.com/Bunyod-Suvonov/auto-commit.git
-```
-Optionally, change the script's parameters to your likes. Especially `project_dir` variable should be changed if the repo isn't cloned in `$HOME`
+Create a private repo, clone it and copy the files in this repo to yours. Then optionally, change the script's parameters to your likes. Especially `project_dir` variable should be changed if your repo isn't in `$HOME`
 ## Step 2
 Add the script to cron's daily tasks:
 ```bash
