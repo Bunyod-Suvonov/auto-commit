@@ -1,5 +1,7 @@
 #!/bin/sh
+# randomly generate the number of commits to make
 x=$(shuf -i 1-4 -n 1)
+# values of y and z decide whether today is a rest day
 y=$(shuf -i 0-10000 -n 1)
 z=$(shuf -i 0-10000 -n 1)
 project_dir="$HOME/auto-commit"
