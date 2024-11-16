@@ -15,8 +15,16 @@ Add the script to crontab and adjust anacron to run missed tasks:
 ```bash
 # assuming apt is the package manager
 sudo apt install crontab anacron
+# copy the script to daily tasks of cron
 cp /path/to/script /etc/cron.daily/
-sudo echo "1 5 cron.daily nice run-parts /etc/cron.daily" >> /etc/anacrontab
+```
+Anacron should by default have `cron.daily` in its configuration file. Check it with
+```bash
+cat /etc/anacrontab
+```
+If `cron.daily` is not there, add it manually:
+```bash
+sudo echo "1	5	cron.daily	run-parts --report /etc/cron.daily" >> /etc/anacrontab
 ```
 
 
