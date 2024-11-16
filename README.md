@@ -12,7 +12,7 @@ sudo apt install crontab anacron
 # copy the script to daily tasks of cron
 sudo cp /path/to/script /etc/cron.daily/
 ```
-Anacron should by default have `cron.daily` in its configuration file. Check it with
+Anacron should have `cron.daily` in its configuration file by default. Check it with
 ```bash
 cat /etc/anacrontab
 ```
