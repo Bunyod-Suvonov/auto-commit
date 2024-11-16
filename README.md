@@ -17,7 +17,7 @@ Add the script to cron's daily tasks:
 # assuming apt is the package manager
 sudo apt install crontab anacron
 # copy the script to daily tasks of cron
-cp /path/to/script /etc/cron.daily/
+sudo cp /path/to/script /etc/cron.daily/
 ```
 Anacron should by default have `cron.daily` in its configuration file. Check it with
 ```bash
