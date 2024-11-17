@@ -20,5 +20,6 @@ If `cron.daily` is not there, add it:
 ```bash
 sudo echo "1	5	cron.daily	run-parts --report /etc/cron.daily" >> /etc/anacrontab
 ```
+Now the script should run once a day every day, and if your computer was off at the time, anacron runs it after 5 minutes after startup. Note that you should have internet connection when the script runs, otherwise, the script simply fails.
 
-
+There is a way to run the script only if there is internet access by adding the script as a systemd service, but I won't bother with it. Feel free to make a PR if you try it and it works.
